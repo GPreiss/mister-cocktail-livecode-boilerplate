@@ -88,7 +88,7 @@ cocktails = [
   }
 ]
 
-ingredients = %w(lemon ice mint leaves redbull jagermeister sugar tonic gin rhum)
+ingredients = %w(lemon ice mint leaves redbull jagermeister sugar tonic gin rum)
 ingredients.each { |ingredient| Ingredient.create(name: ingredient) }
 
 
