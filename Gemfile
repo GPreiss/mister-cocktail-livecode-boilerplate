@@ -7,7 +7,6 @@ gem 'pg'
 gem 'figaro'
 gem 'jbuilder', '~> 2.0'
 gem 'redis'
-gem 'web-console'
 
 gem 'sass-rails'
 gem 'jquery-rails'
@@ -21,7 +20,6 @@ group :development, :test do
   gem 'spring'
   gem 'listen', '~> 3.0.5'
   gem 'spring-watcher-listen', '~> 2.0.0'
-  gem 'web-console'
 end
 
-
+gem 'web-console', group: :development
