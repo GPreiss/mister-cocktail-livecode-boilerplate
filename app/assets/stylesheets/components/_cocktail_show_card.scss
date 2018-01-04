@@ -1,0 +1,41 @@
+.show-card-header{
+  height: 350px;
+  background-size: cover;
+  h1{
+    font-size: 62px;
+    color: white;
+    text-shadow: 1px 1px black;
+    margin-top: 18px;
+    padding-top: 159px;
+  }
+  a{
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 1px black;
+    &:hover{
+      text-decoration: none;
+      font-weight: bolder;
+      opacity: 0.6;
+    }
+  }
+}
+.ingredient-text{
+  ul{
+    margin-top: 10px;
+    margin-bottom: 19px;
+    padding: 21px;
+  }
+  a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    opacity: 0.8;
+    &:hover{
+      color: red;
+      opacity: 0.6;
+    }
+  }
+}
+li{
+  list-style-type: none;
+}
