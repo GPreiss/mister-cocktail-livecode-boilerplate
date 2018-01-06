@@ -1,19 +1,34 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Mister Cocktail</title>
-    <%= csrf_meta_tags %>
-    <%= action_cable_meta_tag %>
-    <%= stylesheet_link_tag    'application', media: 'all' %>
-  </head>
-  <body>
-    <%= render 'navbar' %>
-    <%= yield %>
-    <%= javascript_include_tag 'application' %>
-    <%= yield(:js_content) %>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Mister Cocktail</title>
+  <%= csrf_meta_tags %>
+  <%= action_cable_meta_tag %>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+</head>
+<body>
+  <%= render 'navbar' %>
+  <%= yield %>
+  <%= javascript_include_tag 'application' %>
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+
+  <script type="text/javascript">
+    window.sr = ScrollReveal({ duration: 2000 });
+    sr.reveal('.card', 50);
+
+
+    const navCock = document.getElementById("nav-link");
+
+    navCock.addEventListener("click", () => {
+      document.getElementById('cocktail-index-cards').scrollIntoView(true, "smooth");
+    });
+
+  </script>
+</body>
 </html>
+
 

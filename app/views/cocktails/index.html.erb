@@ -9,7 +9,7 @@
 
 
 
-<div class="container">
+<div class="container" id="cocktail-index-cards">
   <div class="row">
     <% @cocktails.each do |cocktail| %>
     <div class="col-xs-12 col-sm-4">
@@ -31,10 +31,5 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-<% content_for(:js_content) do %>
-<script type="text/javascript">
-  window.sr = ScrollReveal({ duration: 2000 });
-  sr.reveal('.card', 50);
-</script>
-<% end %>
+
+
